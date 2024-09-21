@@ -1,0 +1,126 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.logo {
+    font-size: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #4e99e9, #2b7cbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textw {
+    color: #337AB7;
+    font-size: 24px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы */
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #4e99e9;
+    border-radius: 20px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #2b7cbf;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(90deg, #4e99e9, #2b7cbf);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2b7cbf, #4e99e9);
+}
+
+/* Стили для закрепленных карточек */
+.pinned-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center; /* Центрируем карточки */
+}
+
+.pinned-card {
+    background: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: 100%; /* Полная ширина для карточек */
+    position: relative;
+}
+
+/* Кнопка "Убрать" */
+.removeWeather {
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    background: #ff5252;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.removeWeather:hover {
+    background: #ff1744;
+}
+
+/* Мобильные адаптивные стили */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 40px;
+    }
+
+    .textw {
+        font-size: 20px;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .pinned-card {
+        font-size: 14px;
+    }
+}
